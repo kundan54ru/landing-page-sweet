@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Sweet Moments - Register today and connect with us on WhatsApp.">
+  <meta name="theme-color" content="#b85c7a">
+  <title>Sweet Moments | Register Today</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+  <!-- GOOGLE ADS: Replace placeholders with your real values -->
+  <script>
+    const GOOGLE_ADS_CONVERSION_ID = "AW-XXXXXXXXX";
+    const GOOGLE_ADS_CONVERSION_LABEL = "XXXXXXXXXXXX";
+  </script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-XXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'AW-XXXXXXXXX');
+  </script>
+</head>
+<body>
+  <div class="background-shape shape-one"></div>
+  <div class="background-shape shape-two"></div>
+
+  <main class="page">
+    <header class="brand-header">
+      <div class="logo-mark" aria-hidden="true"><span>✦</span></div>
+      <div>
+        <div class="brand-name">Sweet Moments</div>
+        <div class="brand-tagline">Made with love &amp; sweetness</div>
+      </div>
+    </header>
+
+    <section class="hero" id="hero">
+      <div class="hero-copy">
+        <span class="pill">WELCOME TO SWEET MOMENTS</span>
+        <h1>Let's Create Your<br><em>Sweet Moment.</em></h1>
+        <p>Register your details below and our team will connect with you directly on WhatsApp.</p>
+        <div class="trust-row">
+          <span>✓ Quick Registration</span>
+          <span>✓ Direct WhatsApp Support</span>
+        </div>
+      </div>
+
+      <div class="form-card" id="registrationSection">
+        <div class="card-top">
+          <span class="card-kicker">REGISTRATION</span>
+          <h2>Register Today</h2>
+          <p>It only takes a minute.</p>
+        </div>
+
+        <form id="leadForm" novalidate>
+          <div class="field">
+            <label for="fullName">Full Name <b>*</b></label>
+            <input id="fullName" name="fullName" type="text" autocomplete="name" placeholder="Enter your full name">
+            <div class="error" id="fullNameError"></div>
+          </div>
+
+          <div class="field">
+            <label for="email">Email Address <b>*</b></label>
+            <input id="email" name="email" type="email" autocomplete="email" placeholder="Enter your email address">
+            <div class="error" id="emailError"></div>
+          </div>
+
+          <div class="field">
+            <label for="phone">Mobile Number <b>*</b></label>
+            <input id="phone" name="phone" type="tel" inputmode="numeric" autocomplete="tel" maxlength="10" placeholder="10-digit mobile number">
+            <div class="error" id="phoneError"></div>
+          </div>
+
+          <div class="field">
+            <label for="location">Area / Location <b>*</b></label>
+            <input id="location" name="location" type="text" autocomplete="address-level2" placeholder="Enter your area or location">
+            <div class="error" id="locationError"></div>
+          </div>
+
+          <label class="consent">
+            <input id="consent" type="checkbox">
+            <span>I agree that Sweet Moments may use the information provided to contact me regarding my request.</span>
+          </label>
+          <div class="error consent-error" id="consentError"></div>
+
+          <button id="submitBtn" type="submit">
+            <span id="submitText">SUBMIT REGISTRATION</span>
+            <span id="loadingText" class="hidden">SUBMITTING...</span>
+          </button>
+          <p class="privacy-note">Your details are used only to respond to your request.</p>
+        </form>
+      </div>
+    </section>
+
+    <section class="thank-you-card hidden" id="thankYouSection" aria-live="polite">
+      <div class="success-decoration">✦</div>
+      <div class="success-icon">✓</div>
+      <span class="card-kicker">REGISTRATION COMPLETE</span>
+      <h2>Thank You!</h2>
+      <p>Your information has been successfully submitted.</p>
+      <p class="next-text">For a faster response, connect with <strong>Sweet Moments</strong> directly on WhatsApp.</p>
+      <a id="whatsappButton" class="whatsapp-button" href="#" target="_blank" rel="noopener noreferrer">
+        <span class="whatsapp-symbol">◔</span>
+        Chat with Sweet Moments
+      </a>
+      <p class="whatsapp-note">We look forward to creating a sweet moment with you. ♡</p>
+    </section>
+
+    <footer>
+      <div class="footer-brand">Sweet Moments</div>
+      <div>© 2026 Sweet Moments. All rights reserved.</div>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
