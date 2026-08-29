@@ -1,0 +1,48 @@
+SWEET MOMENTS — GOOGLE SHEET SETUP
+
+A) GOOGLE SHEET
+Create a Google Sheet and put these headings in row 1:
+Name | Email | Mobile | Location | Source | Date
+
+B) APPS SCRIPT
+Google Sheet -> Extensions -> Apps Script.
+Paste the complete code from google-apps-script.gs.
+Save.
+
+C) DEPLOY AS WEB APP
+Deploy -> New deployment -> Web app
+Execute as: Me
+Who has access: Anyone
+Deploy -> authorize if asked -> Copy Web App URL.
+
+D) CONNECT THE WEBSITE
+Open script.js and find:
+const GOOGLE_SHEETS_WEB_APP_URL = "PASTE_YOUR_GOOGLE_APPS_SCRIPT_WEB_APP_URL_HERE";
+
+Replace the placeholder inside the quotes with your Web App URL.
+Do not add quotes around the URL twice.
+
+E) USER FLOW
+Landing page
+-> form submit
+-> data saved to Google Sheet
+-> /thank-you/
+-> WhatsApp button
+
+F) THANK YOU URL
+https://kundan54ru.github.io/landing-page-sweet/thank-you/
+
+G) GOOGLE TAG MANAGER
+Google Tag code is intentionally NOT included.
+Put GTM head code inside thank-you/index.html <head>.
+Put GTM noscript immediately after <body>.
+For conversion tracking use Page View:
+Page Path contains /thank-you/
+
+H) GITHUB
+Upload/replace:
+index.html
+script.js
+style.css
+thank-you/index.html
+Keep the thank-you folder exactly as named.
